@@ -106,7 +106,7 @@ nav {
         margin-bottom: 20px;
     }
     .features{
-        height: 130vh;
+        height: 100vh;
     }
     .features .line {
         margin: 10px; 
@@ -114,7 +114,7 @@ nav {
     }
 
     .features .line img {
-        width: 80px;
+        width: 30px;
         height: auto;
     }
 
