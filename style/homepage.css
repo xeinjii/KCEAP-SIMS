@@ -12,43 +12,28 @@ nav {
     background-color: #2845d6; 
 }
 
-.getstarted{
-    height: 100vh;
-    background-color: rgba(201, 201, 242, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(201, 201, 242, 0.5);
-    background-attachment: fixed;
+.getstarted .text-content span {
+    font-size: 18px;
+    line-height: 1.8;
 }
 
-
-.text-content{
-    padding: 20px;
+.getstarted .actions a {
+    margin: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.actions{
-    padding: 20px;
+.getstarted .actions a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
-.actions a{
-    margin-left: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: #2845d6;
-    padding: 10px 20px;
-    border-radius: 26px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-}
-
-.actions a:hover{
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    text-align: center;
-    
+/* Enhanced About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
 }
 
 .about-us{
@@ -93,15 +78,17 @@ nav {
 .features .line {
     margin: 20px;
     padding: 20px;
-    outline: 1px solid #3434361f;
+    outline: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border color */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
     border-radius: 10px;
     background-color: white;
+    border-color: rgba(40, 69, 214, 0.5); /* Updated border color to match the theme */
 }
 
 .features .line:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(40, 69, 214, 0.8); /* Darker border color on hover */
 }
 
 @media (max-width: 768px) {
@@ -159,3 +146,12 @@ nav {
 .footer .text-center p {
     font-size: 14px;
 }
+
+.spin {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes spin {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+  }
