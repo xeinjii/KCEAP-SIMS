@@ -56,6 +56,8 @@ nav {
     
 }
 
+
+
 .about-content a:hover{
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -121,6 +123,11 @@ nav {
     .footer img{
         width: 100px; 
         height: auto;
+    }
+
+    .getstarted .text-content span {
+        font-size: 12px;
+        line-height: 1;
     }
 }
 
