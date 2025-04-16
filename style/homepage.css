@@ -69,15 +69,13 @@ nav {
 }
 
 .features {
-    height:100vh;
-    padding: 20px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
     background-color: rgba(201, 201, 242, 0.5);
-
-
 }
 
 .features .line {
