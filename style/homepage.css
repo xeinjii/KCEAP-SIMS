@@ -56,7 +56,10 @@ nav {
     
 }
 
-
+.about-us span{
+    font-size: 18px;
+    line-height: 1.8;
+}
 
 .about-content a:hover{
     transform: scale(1.05);
@@ -85,6 +88,13 @@ nav {
     border-radius: 10px;
     background-color: white;
     border-color: rgba(40, 69, 214, 0.5); /* Updated border color to match the theme */
+}
+
+.features .line h3 {
+    font-size: 24px;
+}
+.features .line p{
+    font-size: 18px;
 }
 
 .features .line:hover {
@@ -126,9 +136,22 @@ nav {
     }
 
     .getstarted .text-content span {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1;
     }
+
+    .about-us span{
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .features .line h3 {
+        font-size: 18px;
+    }
+    .features .line p{
+        font-size: 14px;
+    }
+    
 }
 
 .footer {
@@ -153,12 +176,3 @@ nav {
 .footer .text-center p {
     font-size: 14px;
 }
-
-.spin {
-    animation: blink 1s infinite;
-  }
-  
-  @keyframes spin {
-    0%, 100% { opacity: 1; }
-    50%      { opacity: 0; }
-  }
