@@ -175,3 +175,70 @@ nav {
     font-size: 14px;
 }
 
+/* Login Modal Styling */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #2845d6;
+    color: white;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.loginForm .btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 26px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.loginForm .btn:hover{
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signupform input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.signupform .btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 26px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.signupform .btn:hover{
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
