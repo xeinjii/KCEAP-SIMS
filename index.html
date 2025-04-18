@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <title>Homepage — KCEAP </title>
 </head>
 
@@ -29,7 +30,7 @@
     }
 
     .features .line {
-        border-left-color: #213198;
+        border-left: 3px solid #213198;
         ;
     }
 </style>
@@ -77,8 +78,8 @@
                     Designed for a smooth and transparent experience for both applicants and administrators.
                 </span>
                 <div class="actions">
-                    <a class="btn btn-primary" href="#">Login</a>
-                    <a class="btn btn-primary" href="#">Signup</a>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup" href="#">Signup</a>
                 </div>
             </div>
         </div>
@@ -205,7 +206,77 @@
             </div>
         </div>
     </footer>
-    <script src="./script/bootstrap.bundle.min.js"></script>
-</body>
 
+  <!-- Login Modal -->
+  <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">LOGIN FORM</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Add login form here -->
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">EMAIL</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">PASSWORD</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Modal -->
+  <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">REGISTRATION FORM</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Add login form here -->
+          <form>
+          <div class="mb-3">
+              <label for="username" class="form-label">FULLNAME</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">EMAIL</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">PASSWORD</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">CONFIRM YOUR PASSWORD</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="./script/indexFunction.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
