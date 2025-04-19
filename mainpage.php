@@ -16,12 +16,29 @@ include('./include/header.php');
 <body>
 
 
-  <?php include './include/navbar.php'; ?>
 
-  <br><br>
+  <div class="top-bar">
+    <a class="text-white" id="toggle-sidebar" href="#">
+      <span class="material-symbols-outlined">menu</span>
+    </a>
+    <!-- Profile Picture -->
+    <div class="profile-circle">
+      <img id="profile-pic" src="./img/profile.webp" alt="User Profile"
+        onerror="this.onerror=null; this.style.display='none'; document.getElementById('default-icon').style.display='flex';">
+      <span id="default-icon" class="material-symbols-outlined" style="display: none;">person</span>
+    </div>
+  </div>
+  </div>
 
-  <!-- Main content -->
-  <div class="mainpage-centered" style="padding: 20px;">
+  <?php include './include/aside3.php'; ?>
+
+
+
+
+
+
+<!-- Main content -->
+<div class="mainpage-centered" style="padding: 20px;">
     <div class="text-center">
       <h1><strong>Welcome to KCEAP SIMS</strong></h1>
 
@@ -58,14 +75,37 @@ include('./include/header.php');
     </div>
   </div><br><br>
 
-  <hr>
 
-  <?php include './include/footer.php'; ?>
 
-<?php include './include/applyRenew.php'; ?>
 
-<?php include './include/logout.php'; ?>
-  
+
+
+
+
+
+
+
+
+
+  <?php include './include/applyRenew.php'; ?>
+
+  <?php include './include/logout.php'; ?>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("toggle-sidebar");
+      const sidebar = document.getElementById("sidebar");
+      const topBar = document.querySelector(".top-bar");
+
+      toggleButton.addEventListener("click", function () {
+        sidebar.classList.toggle("collapsed");
+        topBar.classList.toggle("collapsed");
+      });
+    });
+  </script>
+
 
   <script type="text/javascript" src="./script/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./script/sidebarToggle.js"></script> <!-- Sidebar toggle script -->
 </body>
